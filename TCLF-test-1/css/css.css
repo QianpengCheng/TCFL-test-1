@@ -14,10 +14,7 @@ html,body{
 	height: 100%;
 	width: 100%;
 }
-#cqp_zym ul{
-	height: 100%;
-	width: 100%;
-}
+
 
 #cqp_zym>ul>li{
 	height: 100%;
@@ -119,12 +116,9 @@ html,body{
 }
 /*第一页面背景设置*/
 #cqp_onepage{
-	height: 750px;
-	width: 1500px;
-	position: absolute;
-	top: 60px;
-	left: 50%;
-	margin-left: -750px;
+	height: calc(100% - 80px);
+	width: 100%;
+	position: relative;
 	border: 1px solid blue;
 	background-image: url(../img/bg1.jpg);
 	background-size: 100% 100%;

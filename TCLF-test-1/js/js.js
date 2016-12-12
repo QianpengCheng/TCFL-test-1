@@ -7,23 +7,20 @@ window.onload = function() {
 		var cqp_zym = $("cqp_kj").getElementsByClassName("cqp_a");
 		//	页面导航栏菜单
 		var cqp_meau = $("cqp_meau").getElementsByTagName("li");
-		//	小圆点
-		var cqp_xyd = $("cqp_xyd").getElementsByTagName("li");
+		
 	    
 	    var laye = $("cqp_laye").getElementsByTagName("li");
 		var ydd = $("cqp_donghua").getElementsByTagName("li");
 //		console.log(cqp_meau);
 		for(var i = 0; i < cqp_meau.length; i++) {
 			cqp_meau[i].index = i;
-			cqp_xyd[i].index = i;
+			
 			cqp_meau[i].onclick = function() {
 				
              var index=this.index;
             cqp_liandong(index);
            }
-			cqp_xyd[i].onclick = function() {
-				var index=this.index;
-		}
+			
 	function i_fun1() {
 			var i=0;
 			var time1 = setInterval(function() {

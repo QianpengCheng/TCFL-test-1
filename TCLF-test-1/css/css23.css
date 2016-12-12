@@ -1,12 +1,8 @@
-*{
+
+body,html,p{
 	margin: 0;
 	padding: 0;
-} 
- li{
-	list-style: none;
 }
-/*主体定位设置*/
-html,body{
 
 
 
@@ -16,18 +12,11 @@ body,html{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	width: 100%;
 }
-#cqp_kj{
-	height: 100%;
-	width: 100%;
-body{
-	background: gray;
-}
-#cqp_zym ul{
+
 #lzy_2,#lzy_3{
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	position: relative;
 	text-align: center;
 }
@@ -35,8 +24,6 @@ body{
 	position: absolute;
 }
 
-#cqp_zym>ul>li{
-	height: 100%;
 #lzy_2_lb,#lzy_3_lb{
 	height: 80px;
 }
@@ -45,23 +32,16 @@ body{
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	border: 1px solid green;
-	/*position: absolute;*/
 	height: calc(100% - 80px);
 	background: url(../img/bg3.jpg) no-repeat center top;
 	
 	
 }
-#cqp_zym>ul>li:nth-child(1){
 
 #lzy_2_true>img{
 	position: absolute;
-	top:0%;
 	z-index: 0;
 }
-#cqp_zym>ul>li:nth-child(2){
-	position: absolute;
-	top:100%;
 
 
 #lzy_2_true>img:nth-child(1){
