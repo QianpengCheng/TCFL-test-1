@@ -1,0 +1,245 @@
+
+body,html,p{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+body,html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+	background: gray;
+}
+#lzy_2,#lzy_3{
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+#lzy_2_true>img{
+	position: absolute;
+}
+
+#lzy_2_lb,#lzy_3_lb{
+	height: 80px;
+}
+#lzy_2_true{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: calc(100% - 80px);
+	background: url(../img/bg3.jpg) no-repeat center top;
+	
+	
+}
+
+#lzy_2_true>img{
+	position: absolute;
+	z-index: 0;
+}
+
+
+#lzy_2_true>img:nth-child(1){
+	left: calc(50% - 260px);
+	top: calc(30% - 180px);
+	
+}
+.img_fly0{
+	animation: blue_fly 2s ease 0s 1;
+}
+@keyframes blue_fly{
+	from{ transform: translate(-200px,-200px);}
+	to{transform: none;}
+}
+
+
+#lzy_2_true>img:nth-child(2){
+	left: calc(50% - 240px);
+	top: calc(30% + 300px);
+}
+.img_fly1{animation: white_fly 2s ease 0s 1;}
+@keyframes white_fly{
+	from{ transform: translate(200px,-200px);}
+	to{transform: none;}
+}
+#lzy_2_true>img:nth-child(3){
+	left: calc(50% - 700px);
+	top: calc(30% + 120px);
+	
+}
+
+
+.img_fly2{
+	animation: blueS_fly 2s ease 0s 1;
+}
+@keyframes blueS_fly{
+	from{ transform: translate(-200px,200px);}
+	to{transform: none;}
+}
+#lzy_table{
+	border-collapse: collapse;
+	position: absolute;
+	left: calc(50%);
+	top: calc(30%);
+	z-index: 2;
+}
+#lzy_table td{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	overflow: hidden;
+}
+#lzy_table td>img{
+	transition: all 2s ease 0s;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+#lzy_table td:hover>img{
+	transform: rotateY(-180deg);
+}
+#lzy_table td>span{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 120px;
+	backface-visibility: hidden;
+	transition: all 2s ease 0s;
+	transform: rotateY(-180deg);
+}
+#lzy_table td:hover>span{
+	transform: rotateY(0deg);
+	background: deepskyblue;
+}
+
+
+#lzy_word{
+	width: 400px;
+	position: absolute;
+	top: calc(30% - 30px);
+	left: calc(50% - 520px);
+	z-index: 1;
+}
+.lzy_word_blue{
+	color: deepskyblue;
+	font-size: 80px;
+	line-height: 60px;
+	text-align: left;
+}
+.lzy_word_white{
+	color: white;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: left;
+	margin-top: 50px;
+}
+
+
+
+
+#lzy_3_true{
+ 	height: calc(100% - 80px);
+ 	font-size: 0;
+ 	background: url(../img/bg4.jpg) no-repeat center top;
+}
+#lzy_3_true .lzy_word_blue{
+	position: absolute;
+	top: calc(30% + 30px);
+}
+.robot{
+	position: absolute;
+	top: calc(30% + 130px);
+	left: calc(50%);
+	animation: robot linear 8s 0s infinite;
+}
+@keyframes robot{
+	0%{transform: translateX(-150px) rotateY(180deg);}
+	49%{transform: translateX(300PX) rotateY(180deg);}
+	51%{transform: translateX(300PX) rotateY(0deg);}
+	100%{transform: translateX(-150px) rotateY(0deg);}
+}
+.lzy_four_picture{
+	width: 992px;
+	position: absolute;
+	top: calc(30% + 300px);
+	left: calc(50% - 500px);
+}
+.lzy_four_picture>span{
+	display: inline-block;
+	height: 130px;
+	overflow: hidden;
+	position: relative;
+}
+.lzy_four_picture img{
+	transform: scale(1) rotate(0deg);
+	transition: all 1s  ease 0s;
+}
+.lzy_four_picture span::before{
+	content: "测试文字";
+	color: white;
+	text-align: center;
+	line-height: 130px;
+	display: none;
+	width: 100px;
+	height: 130px;
+	background: black;
+	opacity: .5;
+	position: absolute;
+	z-index: 2;
+	width: 220px;
+}
+.lzy_four_picture span:nth-child(4)::before{width: 332px;}
+.lzy_four_picture span:hover img{
+	transform: scale(2) rotate(20deg);
+}
+.lzy_four_picture span:hover::before{
+	display: inline-block;
+}
+#lzy_3_true>img{
+	position: absolute;
+	z-index: 0;
+}
+#lzy_3_true>img:nth-child(1){
+	left: calc(50% + 00px);
+	top: calc(30% + 00px);
+	/*animation: pen0 2s ease 0s 1;*/
+}
+.img_pen0{
+	animation: pen0 2s ease 0s 1;
+}
+@keyframes pen0{
+	from{ transform: translateY(-150px);}
+	to{transform: none;}
+}
+
+#lzy_3_true>img:nth-child(2){
+	left: calc(50% - 400px);
+	top: calc(30% + 200px);
+	/*animation: pen1 2s ease 0s 1;*/
+}
+.img_pen1{
+	animation: pen1 2s ease 0s 1;
+}
+@keyframes pen1{
+	from{ transform: translateY(150px);}
+	to{transform: none;}
+}
+#lzy_3_true>img:nth-child(3){
+	left: calc(50% + 100px);
+	top: calc(30% + 260px);
+	/*animation: pen1 2s ease 0s 1;*/
+}
+.img_pen2{
+	animation: pen1 2s ease 0s 1;
+}
